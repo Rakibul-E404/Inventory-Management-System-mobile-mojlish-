@@ -1,0 +1,129 @@
+// @override
+  // Widget build(BuildContext context) {
+  //   final provider = Provider.of<StockProvider>(context);
+  //   List<ProductModel> displayedItems = _selectedBrandFilter == null
+  //       ? provider.stockItems
+  //       : provider.stockItems
+  //       .where((item) => item.brand == _selectedBrandFilter)
+  //       .toList();
+  //
+  //   return Scaffold(
+  //     appBar: AppBar(
+  //       title: const Text('Stock System'),
+  //       actions: [
+  //         IconButton(
+  //           icon: const Icon(Icons.search),
+  //           onPressed: () {
+  //             showSearch(
+  //                 context: context,
+  //                 delegate: ProductSearchDelegate(displayedItems));
+  //           },
+  //         ),
+  //         IconButton(
+  //           icon: const Icon(Icons.filter_list),
+  //           onPressed: _showFilterDialog,
+  //         ),
+  //         IconButton(
+  //           icon: const Icon(CupertinoIcons.barcode_viewfinder),
+  //           onPressed: _scanBarcode,
+  //         ),
+  //       ],
+  //     ),
+  //     body:
+  //     Column(
+  //       children: [
+  //         Expanded(
+  //           child: ListView.builder(
+  //             itemCount: displayedItems.length,
+  //             itemBuilder: (context, index) {
+  //               final item = displayedItems[index];
+  //               return Card(
+  //                 child: GestureDetector(
+  //                     onTap: () => _showItemActions(index),
+  //                     child:
+  //                     ListTile(
+  //                       leading: SingleChildScrollView(
+  //                         scrollDirection: Axis.horizontal,
+  //                         child: Row(
+  //                           mainAxisSize: MainAxisSize.min,
+  //                           children: [
+  //                             Text(
+  //                               "${index + 1}.",
+  //                               style: const TextStyle(
+  //                                   fontSize: 20, fontWeight: FontWeight.bold),
+  //                             ),
+  //                             const SizedBox(width: 10),
+  //                             item.image != null
+  //                                 ? Image.file(
+  //                               item.image!,
+  //                               width: 80,
+  //                               height: 100,
+  //                               fit: BoxFit.cover,
+  //                             )
+  //                                 : const Icon(
+  //                               Icons.photo,
+  //                               size: 50,
+  //                             ),
+  //                           ],
+  //                         ),
+  //                       ),
+  //                       title: Column(
+  //                         crossAxisAlignment: CrossAxisAlignment.start,
+  //                         children: [
+  //                           Text("${item.name} - ${item.brand}"),
+  //                           Text("Barcode: ${item.barcode}"),
+  //                           Text("${item.buyingPrice} - ${item.sellingPrice}"),
+  //                         ],
+  //                       ),
+  //                     )
+  //                 ),
+  //               );
+  //             },
+  //           ),
+  //         ),
+  //         Padding(
+  //           padding: const EdgeInsets.all(16.0),
+  //           child: Column(
+  //             children: [
+  //               // Floating Action Button
+  //               Align(
+  //                 alignment: Alignment.centerRight,
+  //                 child: SpeedDial(
+  //                   icon: Icons.add,
+  //                   activeIcon: Icons.close,
+  //                   backgroundColor: Colors.blue,
+  //                   foregroundColor: Colors.white,
+  //                   children: [
+  //                     SpeedDialChild(
+  //                       child: const Icon(CupertinoIcons.cube_box_fill),
+  //                       label: 'Add Product',
+  //                       onTap: () => _addOrEditItem(),
+  //                     ),
+  //                     SpeedDialChild(
+  //                       child: const Icon(Icons.branding_watermark),
+  //                       label: 'Add Brand',
+  //                       onTap: () {
+  //                         Navigator.of(context).push(MaterialPageRoute(
+  //                           builder: (context) => AddBrandScreen(userRole: widget.role),
+  //                         ));
+  //                       },
+  //                     ),
+  //                   ],
+  //                 ),
+  //               ),
+  //               const SizedBox(height: 10), // Add some spacing between the FAB and the total
+  //               // Total Buying Price
+  //               Text(
+  //                 'Total Buying Price: \$${_calculateTotalBuyingPrice().toStringAsFixed(2)}',
+  //                 style: const TextStyle(
+  //                   fontSize: 18,
+  //                   fontWeight: FontWeight.bold,
+  //                 ),
+  //               ),
+  //             ],
+  //           ),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }

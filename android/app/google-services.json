@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51792896520",
+    "project_id": "mobilemojlish-5f9f0",
+    "storage_bucket": "mobilemojlish-5f9f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51792896520:android:84a340f3342780d89667bd",
+        "android_client_info": {
+          "package_name": "com.mobilemojlish.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOrdu883KQOnQkIcphzdlDhVMCeT4q46o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

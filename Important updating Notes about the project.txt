@@ -1,0 +1,9 @@
+*IMEI TEXT fields
+
+*total buying price,,
+
+*total product count,,,,serial number,,
+
+*sold serial
+
+moderator er nama & branch input & select
